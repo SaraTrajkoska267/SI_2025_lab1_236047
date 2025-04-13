@@ -1,0 +1,19 @@
+LOGS:
+
+Sara@DESKTOP-6FCJNUB MINGW64 ~/SI_2025_lab1_236047 (master)
+$ git log --oneline --graph --all
+*   716c55d (origin/master, origin/HEAD) Merge pull request #11 from SaraTrajkoska267/5-filter-tasks-by-category
+|\
+| * 2653cf5 (origin/5-filter-tasks-by-category, 5-filter-tasks-by-category) Filter tasks by category
+* |   dc5340b Merge pull request #10 from SaraTrajkoska267/2-find-all-completed-tasks
+|\ \
+| |/
+|/|
+| * 52b0734 (origin/2-find-all-completed-tasks, 2-find-all-completed-tasks) Find all completed tasks
+| * b387e07 Find all completed tasks
+|/
+| * 8d34eab (HEAD -> master, origin/7-count-tasks-per-category, 7-count-tasks-per-category) Count tasks per category
+|/
+* da87928 Update README.md
+* e2a34ee Add starter code
+* 3b7c5fd Initial commit

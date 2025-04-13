@@ -1,0 +1,477 @@
+1.За почеток на лабораториската вежба 1 го инсталирав Git и на линкот https://github.com/settings/repositories.
+
+2.Следно се најавив на мојот GitHub профил, и следен чекор направив репозиториум SI_2025_lab1_236047 и истиот го направив приватен.
+
+3.Потоа на https://github.com/settings/repositories главната гранка ја сетирав како master.
+
+4.И на мојот компјутер креирав директориум со име SI_2025_lab1_236047 и во него го иницијализирав Git со командата 'git init'.
+
+5.Мојот локален репозиториум го поврзав со оддалечениот репозиториум со командата 'git remote add origin https://github.com/shopkoski/SI_2025_lab1_236047.git и git remote -v.
+
+
+6.README.md фајлот го креирав користејќи ја командата nano README.md и git add README.md, и следно по промената на содржината го зачував, и ги извршив командите 'git add README.md ' и 'git commit -m "Initial commit" . (Се логирав со мојот маил и име бидејќи ми бараше идентитет)
+
+7.Преименување на гранка и push на master->git branch -M master и git push -u origin master 
+
+8.Додавање и commit на SI2025Lab1Main.java
+
+9.Push на master гранката
+
+10. Fetch на origin и checkout на гранки
+
+    Sara@DESKTOP-6FCJNUB MINGW64 ~/SI_2025_lab1_236047 (master)
+    $ git fetch origin
+    git checkout 2-find-all-completed-tasks
+    remote: Enumerating objects: 5, done.
+    remote: Counting objects: 100% (5/5), done.
+    remote: Compressing objects: 100% (2/2), done.
+    remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+    Unpacking objects: 100% (3/3), 969 bytes | 64.00 KiB/s, done.
+    From [https://github.com/SaraTrajkoska267/SI_2025_lab1_236047](https://github.com/SaraTrajkoska267/SI_2025_lab1_236047)
+       e2a34ee..da87928  master     -> origin/master
+     * [new branch]        2-find-all-completed-tasks -> origin/2-find-all-completed-tasks
+    branch '2-find-all-completed-tasks' set up to track 'origin/2-find-all-completed-tasks'.
+    Switched to a new branch '2-find-all-completed-tasks'
+    Sara@DESKTOP-6FCJNUB MINGW64 ~/SI_2025_lab1_236047 (2-find-all-completed-tasks)
+    $ git fetch origin
+    git checkout 5-filter-tasks-by-category
+    From [https://github.com/SaraTrajkoska267/SI_2025_lab1_236047](https://github.com/SaraTrajkoska267/SI_2025_lab1_236047)
+     * [new branch]        5-filter-tasks-by-category -> origin/5-filter-tasks-by-category
+    branch '5-filter-tasks-by-category' set up to track 'origin/5-filter-tasks-by-category'.
+    Switched to a new branch '5-filter-tasks-by-category'
+    Sara@DESKTOP-6FCJNUB MINGW64 ~/SI_2025_lab1_236047 (5-filter-tasks-by-category)
+    $ git fetch origin
+    git checkout 7-count-tasks-per-category
+    From [https://github.com/SaraTrajkoska267/SI_2025_lab1_236047](https://github.com/SaraTrajkoska267/SI_2025_lab1_236047)
+     * [new branch]        7-count-tasks-per-category -> origin/7-count-tasks-per-category
+    branch '7-count-tasks-per-category' set up to track 'origin/7-count-tasks-per-category'.
+    Switched to a new branch '7-count-tasks-per-category'
+    ```
+11. Работа на гранка 7-count-tasks-per-category
+
+    Sara@DESKTOP-6FCJNUB MINGW64 ~/SI_2025_lab1_236047 (7-count-tasks-per-category)
+    $ git branch
+      2-find-all-completed-tasks
+      5-filter-tasks-by-category
+    * 7-count-tasks-per-category
+      master
+    Sara@DESKTOP-6FCJNUB MINGW64 ~/SI_2025_lab1_236047 (7-count-tasks-per-category)
+    $ git checkout master
+    Switched to branch 'master'
+    Your branch is behind 'origin/master' by 1 commit, and can be fast-forwarded.
+      (use "git pull" to update your local branch)
+    Sara@DESKTOP-6FCJNUB MINGW64 ~/SI_2025_lab1_236047 (master)
+    $ git fetch origin
+    Sara@DESKTOP-6FCJNUB MINGW64 ~/SI_2025_lab1_236047 (master)
+    $ git checkout 7-count-tasks-per-category
+    Switched to branch '7-count-tasks-per-category'
+    Your branch is up to date with 'origin/7-count-tasks-per-category'.
+    Sara@DESKTOP-6FCJNUB MINGW64 ~/SI_2025_lab1_236047 (7-count-tasks-per-category)
+    $ git add .
+    warning: in the working copy of 'SI2025Lab1Main.java', LF will be replaced by CRLF the next time Git touches it
+    Sara@DESKTOP-6FCJNUB MINGW64 ~/SI_2025_lab1_236047 (7-count-tasks-per-category)
+    $ git commit -m "Count tasks per category"
+    [7-count-tasks-per-category 8d34eab] Count tasks per category
+     6 files changed, 45 insertions(+), 2 deletions(-)
+     create mode 100644 .idea/.gitignore
+     create mode 100644 .idea/misc.xml
+     create mode 100644 .idea/modules.xml
+     create mode 100644 .idea/vcs.xml
+     create mode 100644 SI_2025_lab1_236047.iml
+    ```
+
+12. Работа на гранка 2-find-all-completed-tasks
+
+   
+    Sara@DESKTOP-6FCJNUB MINGW64 ~/SI_2025_lab1_236047 (7-count-tasks-per-category)
+    $ git checkout 2-find-all-completed-tasks
+    Switched to branch '2-find-all-completed-tasks'
+    Your branch is up to date with 'origin/2-find-all-completed-tasks'.
+    Sara@DESKTOP-6FCJNUB MINGW64 ~/SI_2025_lab1_236047 (2-find-all-completed-tasks)
+    $ git checkout master
+    Switched to branch 'master'
+    Your branch is behind 'origin/master' by 1 commit, and can be fast-forwarded.
+      (use "git pull" to update your local branch)
+    Sara@DESKTOP-6FCJNUB MINGW64 ~/SI_2025_lab1_236047 (master)
+    $ git checkout 2-find-all-completed-tasks
+    Switched to branch '2-find-all-completed-tasks'
+    Your branch is up to date with 'origin/2-find-all-completed-tasks'.
+    Sara@DESKTOP-6FCJNUB MINGW64 ~/SI_2025_lab1_236047 (2-find-all-completed-tasks)
+    $ git add .
+    warning: in the working copy of '.idea/workspace.xml', LF will be replaced by CRLF the next time Git touches it
+    Sara@DESKTOP-6FCJNUB MINGW64 ~/SI_2025_lab1_236047 (2-find-all-completed-tasks)
+    $ git commit -m "Find all completed tasks"
+    [2-find-all-completed-tasks b387e07] Find all completed tasks
+     3 files changed, 88 insertions(+), 2 deletions(-)
+     create mode 100644 .idea/misc.xml
+     create mode 100644 .idea/workspace.xml
+    ```
+
+13.Гранките 2-find-all-completed-tasks, 5-filter-tasks-by-category и 7-count-tasks-per-category поврзани на оддалечениот репозиториум.
+
+14.И уште еден commit на master, додавање сите фајлови (git add .) и сте комитирање со порака "Final commit"
+
+
+Sara@DESKTOP-6FCJNUB MINGW64 ~
+$ mkdir SI_2025_lab1_236047
+
+Sara@DESKTOP-6FCJNUB MINGW64 ~
+$ cd SI_2025_lab1_236047
+
+Sara@DESKTOP-6FCJNUB MINGW64 ~/SI_2025_lab1_236047
+$ git init
+Initialized empty Git repository in C:/Users/Sara/SI_2025_lab1_236047/.git/
+
+Sara@DESKTOP-6FCJNUB MINGW64 ~/SI_2025_lab1_236047 (master)
+$ git remote add origin https://github.com/SaraTrajkoska267/SI_2025_lab1_236047.git
+
+Sara@DESKTOP-6FCJNUB MINGW64 ~/SI_2025_lab1_236047 (master)
+$ git remote -v
+origin  https://github.com/SaraTrajkoska267/SI_2025_lab1_236047.git (fetch)
+origin  https://github.com/SaraTrajkoska267/SI_2025_lab1_236047.git (push)
+
+Sara@DESKTOP-6FCJNUB MINGW64 ~/SI_2025_lab1_236047 (master)
+$ nano README.md
+
+Sara@DESKTOP-6FCJNUB MINGW64 ~/SI_2025_lab1_236047 (master)
+$ git add README.md
+warning: in the working copy of 'README.md', LF will be replaced by CRLF the next time Git touches it
+
+Sara@DESKTOP-6FCJNUB MINGW64 ~/SI_2025_lab1_236047 (master)
+$ git commit -m "Initial commit"
+Author identity unknown
+
+*** Please tell me who you are.
+
+Run
+
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+
+to set your account's default identity.
+Omit --global to set the identity only in this repository.
+
+fatal: unable to auto-detect email address (got 'Sara@DESKTOP-6FCJNUB.(none)')
+
+Sara@DESKTOP-6FCJNUB MINGW64 ~/SI_2025_lab1_236047 (master)
+$  git config --global user.email "sara.trajkoska.1@students.finki.ukim.mk"^C
+
+Sara@DESKTOP-6FCJNUB MINGW64 ~/SI_2025_lab1_236047 (master)
+$ git commit -m "Initial commit"
+[master (root-commit) 3b7c5fd] Initial commit
+ 1 file changed, 3 insertions(+)
+ create mode 100644 README.md
+
+Sara@DESKTOP-6FCJNUB MINGW64 ~/SI_2025_lab1_236047 (master)
+$ git branch -M master
+
+Sara@DESKTOP-6FCJNUB MINGW64 ~/SI_2025_lab1_236047 (master)
+$ git push -u origin master
+info: please complete authentication in your browser...
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 301 bytes | 301.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+To https://github.com/SaraTrajkoska267/SI_2025_lab1_236047.git
+ * [new branch]      master -> master
+branch 'master' set up to track 'origin/master'.
+
+Sara@DESKTOP-6FCJNUB MINGW64 ~/SI_2025_lab1_236047 (master)
+$ git add SI2025Lab1Main.java
+warning: in the working copy of 'SI2025Lab1Main.java', LF will be replaced by CRLF the next time Git touches it
+
+Sara@DESKTOP-6FCJNUB MINGW64 ~/SI_2025_lab1_236047 (master)
+$ git commit -m "Add starter code"
+[master e2a34ee] Add starter code
+ 1 file changed, 126 insertions(+)
+ create mode 100644 SI2025Lab1Main.java
+
+Sara@DESKTOP-6FCJNUB MINGW64 ~/SI_2025_lab1_236047 (master)
+$ git push -u origin master
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 1.21 KiB | 1.21 MiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+To https://github.com/SaraTrajkoska267/SI_2025_lab1_236047.git
+   3b7c5fd..e2a34ee  master -> master
+branch 'master' set up to track 'origin/master'.
+
+Sara@DESKTOP-6FCJNUB MINGW64 ~/SI_2025_lab1_236047 (master)
+$ git fetch origin
+git checkout 2-find-all-completed-tasks
+remote: Enumerating objects: 5, done.
+remote: Counting objects: 100% (5/5), done.
+remote: Compressing objects: 100% (2/2), done.
+remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+Unpacking objects: 100% (3/3), 969 bytes | 64.00 KiB/s, done.
+From https://github.com/SaraTrajkoska267/SI_2025_lab1_236047
+   e2a34ee..da87928  master     -> origin/master
+ * [new branch]      2-find-all-completed-tasks -> origin/2-find-all-completed-tasks
+branch '2-find-all-completed-tasks' set up to track 'origin/2-find-all-completed-tasks'.
+Switched to a new branch '2-find-all-completed-tasks'
+
+Sara@DESKTOP-6FCJNUB MINGW64 ~/SI_2025_lab1_236047 (2-find-all-completed-tasks)
+$ git fetch origin
+git checkout 5-filter-tasks-by-category
+From https://github.com/SaraTrajkoska267/SI_2025_lab1_236047
+ * [new branch]      5-filter-tasks-by-category -> origin/5-filter-tasks-by-category
+branch '5-filter-tasks-by-category' set up to track 'origin/5-filter-tasks-by-category'.
+Switched to a new branch '5-filter-tasks-by-category'
+
+Sara@DESKTOP-6FCJNUB MINGW64 ~/SI_2025_lab1_236047 (5-filter-tasks-by-category)
+$ git fetch origin
+git checkout 7-count-tasks-per-category
+From https://github.com/SaraTrajkoska267/SI_2025_lab1_236047
+ * [new branch]      7-count-tasks-per-category -> origin/7-count-tasks-per-category
+branch '7-count-tasks-per-category' set up to track 'origin/7-count-tasks-per-category'.
+Switched to a new branch '7-count-tasks-per-category'
+
+Sara@DESKTOP-6FCJNUB MINGW64 ~/SI_2025_lab1_236047 (7-count-tasks-per-category)
+$ git branch
+  2-find-all-completed-tasks
+  5-filter-tasks-by-category
+* 7-count-tasks-per-category
+  master
+
+Sara@DESKTOP-6FCJNUB MINGW64 ~/SI_2025_lab1_236047 (7-count-tasks-per-category)
+$ git checkout master
+Switched to branch 'master'
+Your branch is behind 'origin/master' by 1 commit, and can be fast-forwarded.
+  (use "git pull" to update your local branch)
+
+Sara@DESKTOP-6FCJNUB MINGW64 ~/SI_2025_lab1_236047 (master)
+$ git fetch origin
+
+Sara@DESKTOP-6FCJNUB MINGW64 ~/SI_2025_lab1_236047 (master)
+$ git checkout 7-count-tasks-per-category
+Switched to branch '7-count-tasks-per-category'
+Your branch is up to date with 'origin/7-count-tasks-per-category'.
+
+Sara@DESKTOP-6FCJNUB MINGW64 ~/SI_2025_lab1_236047 (7-count-tasks-per-category)
+$ git add .
+warning: in the working copy of 'SI2025Lab1Main.java', LF will be replaced by CRLF the next time Git touches it
+
+Sara@DESKTOP-6FCJNUB MINGW64 ~/SI_2025_lab1_236047 (7-count-tasks-per-category)
+$ git commit -m "Count tasks per category"
+[7-count-tasks-per-category 8d34eab] Count tasks per category
+ 6 files changed, 45 insertions(+), 2 deletions(-)
+ create mode 100644 .idea/.gitignore
+ create mode 100644 .idea/misc.xml
+ create mode 100644 .idea/modules.xml
+ create mode 100644 .idea/vcs.xml
+ create mode 100644 SI_2025_lab1_236047.iml
+
+Sara@DESKTOP-6FCJNUB MINGW64 ~/SI_2025_lab1_236047 (7-count-tasks-per-category)
+$ git checkout 2-find-all-completed-tasks
+Switched to branch '2-find-all-completed-tasks'
+Your branch is up to date with 'origin/2-find-all-completed-tasks'.
+
+Sara@DESKTOP-6FCJNUB MINGW64 ~/SI_2025_lab1_236047 (2-find-all-completed-tasks)
+$ git checkout master
+Switched to branch 'master'
+Your branch is behind 'origin/master' by 1 commit, and can be fast-forwarded.
+  (use "git pull" to update your local branch)
+
+Sara@DESKTOP-6FCJNUB MINGW64 ~/SI_2025_lab1_236047 (master)
+$ git checkout 2-find-all-completed-tasks
+Switched to branch '2-find-all-completed-tasks'
+Your branch is up to date with 'origin/2-find-all-completed-tasks'.
+
+Sara@DESKTOP-6FCJNUB MINGW64 ~/SI_2025_lab1_236047 (2-find-all-completed-tasks)
+$ git add .
+warning: in the working copy of '.idea/workspace.xml', LF will be replaced by CRLF the next time Git touches it
+
+Sara@DESKTOP-6FCJNUB MINGW64 ~/SI_2025_lab1_236047 (2-find-all-completed-tasks)
+$ git commit -m "Find all completed tasks"
+[2-find-all-completed-tasks b387e07] Find all completed tasks
+ 3 files changed, 88 insertions(+), 2 deletions(-)
+ create mode 100644 .idea/misc.xml
+ create mode 100644 .idea/workspace.xml
+
+Sara@DESKTOP-6FCJNUB MINGW64 ~/SI_2025_lab1_236047 (2-find-all-completed-tasks)
+$ git checkout master
+error: Your local changes to the following files would be overwritten by checkout:
+        SI2025Lab1Main.java
+Please commit your changes or stash them before you switch branches.
+Aborting
+
+Sara@DESKTOP-6FCJNUB MINGW64 ~/SI_2025_lab1_236047 (2-find-all-completed-tasks)
+$ git checkout 5-filter-tasks-by-category
+error: Your local changes to the following files would be overwritten by checkout:
+        SI2025Lab1Main.java
+Please commit your changes or stash them before you switch branches.
+Aborting
+
+Sara@DESKTOP-6FCJNUB MINGW64 ~/SI_2025_lab1_236047 (2-find-all-completed-tasks)
+$ git commit -m "Find all completed tasks"
+On branch 2-find-all-completed-tasks
+Your branch is ahead of 'origin/2-find-all-completed-tasks' by 1 commit.
+  (use "git push" to publish your local commits)
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   .idea/workspace.xml
+        modified:   SI2025Lab1Main.java
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        .idea/vcs.xml
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+Sara@DESKTOP-6FCJNUB MINGW64 ~/SI_2025_lab1_236047 (2-find-all-completed-tasks)
+$ git checkout 5-filter-tasks-by-category
+error: Your local changes to the following files would be overwritten by checkout:
+        .idea/workspace.xml
+        SI2025Lab1Main.java
+Please commit your changes or stash them before you switch branches.
+Aborting
+
+Sara@DESKTOP-6FCJNUB MINGW64 ~/SI_2025_lab1_236047 (2-find-all-completed-tasks)
+$ git add .
+warning: in the working copy of '.idea/workspace.xml', LF will be replaced by CRLF the next time Git touches it
+
+Sara@DESKTOP-6FCJNUB MINGW64 ~/SI_2025_lab1_236047 (2-find-all-completed-tasks)
+$ git commit -m "Find all completed tasks"
+[2-find-all-completed-tasks 52b0734] Find all completed tasks
+ 3 files changed, 11 insertions(+), 2 deletions(-)
+ create mode 100644 .idea/vcs.xml
+
+Sara@DESKTOP-6FCJNUB MINGW64 ~/SI_2025_lab1_236047 (2-find-all-completed-tasks)
+$ git checkout 5-filter-tasks-by-category
+Switched to branch '5-filter-tasks-by-category'
+Your branch is up to date with 'origin/5-filter-tasks-by-category'.
+
+Sara@DESKTOP-6FCJNUB MINGW64 ~/SI_2025_lab1_236047 (5-filter-tasks-by-category)
+$ git add .
+
+Sara@DESKTOP-6FCJNUB MINGW64 ~/SI_2025_lab1_236047 (5-filter-tasks-by-category)
+$ git commit -m "Filter tasks by category"
+[5-filter-tasks-by-category 2653cf5] Filter tasks by category
+ 1 file changed, 7 insertions(+), 2 deletions(-)
+
+Sara@DESKTOP-6FCJNUB MINGW64 ~/SI_2025_lab1_236047 (5-filter-tasks-by-category)
+$ git checkout 2-find-all-completed-tasks
+Switched to branch '2-find-all-completed-tasks'
+Your branch is ahead of 'origin/2-find-all-completed-tasks' by 2 commits.
+  (use "git push" to publish your local commits)
+
+Sara@DESKTOP-6FCJNUB MINGW64 ~/SI_2025_lab1_236047 (2-find-all-completed-tasks)
+$ git push origin 2-find-all-completed-tasks
+Enumerating objects: 14, done.
+Counting objects: 100% (14/14), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (12/12), done.
+Writing objects: 100% (12/12), 2.54 KiB | 1.27 MiB/s, done.
+Total 12 (delta 3), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (3/3), completed with 1 local object.
+To https://github.com/SaraTrajkoska267/SI_2025_lab1_236047.git
+   da87928..52b0734  2-find-all-completed-tasks -> 2-find-all-completed-tasks
+
+Sara@DESKTOP-6FCJNUB MINGW64 ~/SI_2025_lab1_236047 (2-find-all-completed-tasks)
+$ git checkout 5-filter-tasks-by-category
+Switched to branch '5-filter-tasks-by-category'
+Your branch is ahead of 'origin/5-filter-tasks-by-category' by 1 commit.
+  (use "git push" to publish your local commits)
+
+Sara@DESKTOP-6FCJNUB MINGW64 ~/SI_2025_lab1_236047 (5-filter-tasks-by-category)
+$ git push origin 5-filter-tasks-by-category
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 449 bytes | 449.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/SaraTrajkoska267/SI_2025_lab1_236047.git
+   da87928..2653cf5  5-filter-tasks-by-category -> 5-filter-tasks-by-category
+
+Sara@DESKTOP-6FCJNUB MINGW64 ~/SI_2025_lab1_236047 (5-filter-tasks-by-category)
+$ git checkout 7-count-tasks-per-category
+Switched to branch '7-count-tasks-per-category'
+Your branch is ahead of 'origin/7-count-tasks-per-category' by 1 commit.
+  (use "git push" to publish your local commits)
+
+Sara@DESKTOP-6FCJNUB MINGW64 ~/SI_2025_lab1_236047 (7-count-tasks-per-category)
+$ git push origin 7-count-tasks-per-category
+Enumerating objects: 11, done.
+Counting objects: 100% (11/11), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (9/9), done.
+Writing objects: 100% (9/9), 1.54 KiB | 1.54 MiB/s, done.
+Total 9 (delta 1), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/SaraTrajkoska267/SI_2025_lab1_236047.git
+   da87928..8d34eab  7-count-tasks-per-category -> 7-count-tasks-per-category
+
+Sara@DESKTOP-6FCJNUB MINGW64 ~/SI_2025_lab1_236047 (7-count-tasks-per-category)
+$ git checkout master
+Switched to branch 'master'
+Your branch is behind 'origin/master' by 1 commit, and can be fast-forwarded.
+  (use "git pull" to update your local branch)
+
+Sara@DESKTOP-6FCJNUB MINGW64 ~/SI_2025_lab1_236047 (master)
+$ git merge 7-count-tasks-per-category
+Updating e2a34ee..8d34eab
+Fast-forward
+ .idea/.gitignore        |  8 ++++++++
+ .idea/misc.xml          |  6 ++++++
+ .idea/modules.xml       |  8 ++++++++
+ .idea/vcs.xml           |  6 ++++++
+ README.md               |  6 +++---
+ SI2025Lab1Main.java     |  8 ++++++--
+ SI_2025_lab1_236047.iml | 11 +++++++++++
+ 7 files changed, 48 insertions(+), 5 deletions(-)
+ create mode 100644 .idea/.gitignore
+ create mode 100644 .idea/misc.xml
+ create mode 100644 .idea/modules.xml
+ create mode 100644 .idea/vcs.xml
+commit 8d34eabc3f2291cc8726e31ac25b1049bff78513 (HEAD -> master, origin/7-count-tasks-per-category, 7-count-tasks-per-category)
+
+Sara@DESKTOP-6FCJNUB MINGW64 ~/SI_2025_lab1_236047 (master)
+$ git log --oneline --graph --all
+*   716c55d (origin/master, origin/HEAD) Merge pull request #11 from SaraTrajkoska267/5-filter-tasks-by-category
+|\
+| * 2653cf5 (origin/5-filter-tasks-by-category, 5-filter-tasks-by-category) Filter tasks by category
+* |   dc5340b Merge pull request #10 from SaraTrajkoska267/2-find-all-completed-tasks
+|\ \
+| |/
+|/|
+| * 52b0734 (origin/2-find-all-completed-tasks, 2-find-all-completed-tasks) Find all completed tasks
+| * b387e07 Find all completed tasks
+|/
+| * 8d34eab (HEAD -> master, origin/7-count-tasks-per-category, 7-count-tasks-per-category) Count tasks per category
+|/
+* da87928 Update README.md
+* e2a34ee Add starter code
+* 3b7c5fd Initial commit
+
+Sara@DESKTOP-6FCJNUB MINGW64 ~/SI_2025_lab1_236047 (master)
+$ git commit -m "Final commit"
+On branch master
+Your branch and 'origin/master' have diverged,
+and have 1 and 5 different commits each, respectively.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        SI2025
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+Sara@DESKTOP-6FCJNUB MINGW64 ~/SI_2025_lab1_236047 (master)
+$ git add .
+warning: in the working copy of 'SI2025', LF will be replaced by CRLF the next time Git touches it
+
+Sara@DESKTOP-6FCJNUB MINGW64 ~/SI_2025_lab1_236047 (master)
+$ git commit -m "Final commit"
+[master e95bb61] Final commit
+ 1 file changed, 23 insertions(+)
+ create mode 100644 SI2025
+
+
+
