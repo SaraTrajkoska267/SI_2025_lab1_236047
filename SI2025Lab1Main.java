@@ -76,7 +76,6 @@ class TaskManager {
             }
         }
         return completed;
-    }
 
     // 3. List tasks sorted by name
     public void sortTasksByName() {
